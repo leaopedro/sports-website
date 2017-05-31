@@ -13,7 +13,10 @@ const Home = () => {
         <Banner imageUrl="/img/banner.png" />
         <FilterContainer />
         <ProductListContainer />
-        <Banner imageUrl="/img/banner-bottom.jpg" />
+        <Banner title={'JUST DO IT.'} imageUrl="/img/banner-bottom.jpg" button={true} buttonTitle={'Todos os produtos'} />
+        <section className="footer">
+            <p>Nike Copyright 2017 - all rights reserved</p>
+        </section>
     </div>
   );
 };

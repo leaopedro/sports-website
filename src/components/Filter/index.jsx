@@ -30,7 +30,7 @@ class Filter extends React.Component {
                 <div className="container">
                     <p className="filter-title">{this.props.filter.filterTitle}</p>
                     {filterItems}
-                    <button className="btn btn-default reset-btn">
+                    <button className="btn btn-default reset-btn" onClick={this.props.resetFilter}>
                         Todos os produtos
                     </button>
                 </div>

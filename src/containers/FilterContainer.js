@@ -15,7 +15,7 @@ function mapDispatchToProps(dispatch) {
             dispatch(toggleFilter(value, filter));
         },
         resetFilter: () => {
-            dispatch(setActiveFilters());
+            dispatch(setActiveFilters([]));
             dispatch(refreshItems());
         },
     }
