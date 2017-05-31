@@ -10,10 +10,12 @@
 
 import { combineReducers } from 'redux';
 import productList from './productList';
+import filter from './filter';
 
 
 const rootReducer = combineReducers({
-    productList
+    productList,
+    filter
 });
 
 export default rootReducer;

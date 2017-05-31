@@ -1,0 +1,47 @@
+.checkbox-container{
+    width: 100%;
+    margin: 5px auto;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    &.error p{
+        color: red;
+    }
+    .checkbox{
+        width: 18px;
+        height: 18px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        border: 1px solid #CBCBCB;
+        float: left;
+        margin-top: -5px;
+        background: #F9F9F9;
+        .fa{
+            color: #fff;
+            font-size: 12px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        &.checked{
+            background: #1f1f1f;
+            border: 1px solid #1f1f1f;
+        }
+
+        &.unchecked{
+            .fa{
+                display: none;
+            }
+        }
+    }
+    .checkbox-label{
+        float: left;
+        margin-left: 5px;
+        margin-top: -3px;
+        p{
+            font-size: 12px;
+            color: #989898;
+        }
+    }
+}
