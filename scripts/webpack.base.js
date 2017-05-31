@@ -8,9 +8,9 @@ module.exports = (env) => {
   const config = {
     entry,
     output: {
-      filename: 'entry/[name].[hash].js',
+      filename: 'entry/[name].js',
       path: path.join(__dirname, '..', 'release'),
-      publicPath: '/',
+      publicPath: '',
     },
     resolve: {
       extensions: ['.js', '.jsx', '.json'],

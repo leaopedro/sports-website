@@ -12,7 +12,7 @@ const store = createStore(
     thunkMiddleware // lets us dispatch() functions
   )
 );
-console.log(store);
+
 render(
   <App store={store} />,
   document.getElementById('app')

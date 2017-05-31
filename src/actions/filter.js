@@ -14,13 +14,11 @@ export function setActiveFilters(activeFilters) {
 export function toggleFilter(val, filter) {
     return (dispatch, getState) => {
         const activeFilters = getState().filter.activeFilters;
-        console.log(activeFilters);
         if (activeFilters.indexOf(filter.id) !== -1) {
             activeFilters.splice(activeFilters.indexOf(filter.id), 1);
         } else {
             activeFilters.push(filter.id);
         }
-        console.log(activeFilters);
         dispatch(setActiveFilters(activeFilters));
         dispatch(refreshItems());
     };

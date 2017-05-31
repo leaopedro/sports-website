@@ -10,10 +10,10 @@ const Home = () => {
     return (
     <div className="home">
         <NavbarContainer />
-        <Banner imageUrl="/img/banner.png" />
+        <Banner imageUrl="img/banner.png" />
         <FilterContainer />
         <ProductListContainer />
-        <Banner title={'JUST DO IT.'} imageUrl="/img/banner-bottom.jpg" button={true} buttonTitle={'Todos os produtos'} />
+        <Banner title={'JUST DO IT.'} imageUrl="img/banner-bottom.jpg" button={true} buttonTitle={'Todos os produtos'} />
         <section className="footer">
             <p>Nike Copyright 2017 - all rights reserved</p>
         </section>

@@ -12,7 +12,6 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         fetchProducts: () => {
-            console.log('fetchProducts');
             dispatch(fetchProducts());
         },
     }
