@@ -2,18 +2,96 @@
     .products-row {
         overflow-x: scroll;
         overflow-y: hidden;
-        height: 200px;
-        margin: 15px auto;
+        height: 400px;
+        margin: 20px auto;
         width: 100%;
-        padding: 0 15px;
+        .row-title{
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
         .list {
             white-space: nowrap;
+            padding-left: 0;
             .product-item {
                 white-space: normal;
-                width: 200px;
-                height: 150px;
+                width: 230px;
+                height: 340px;
                 margin: 5px 10px;
                 display: inline-block;
+                border: 1px solid transparent;
+                padding: 5px 20px 10px;
+                p {
+                    margin: 5px 0;
+                }
+                .item-image {
+                    margin: 0 30px;
+                    height: 130px;
+                }
+                .personalize {
+                    width: 90%;
+                    border-bottom: 1px solid #CBCBCB;
+                    .personalize-icon {
+                        background-image: url('/img/personalize.jpg');
+                        float: left;
+                        height: 15px;
+                        width: 15px;
+                        margin-right: 10px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .personalize-title {
+                        font-size: 11px;
+                        color: #CBCBCB;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin: 2px 0;
+                    }
+                    &:hover {
+                        border-bottom: 1px solid #888888;
+                        .personalize-title {
+                            color: #888888;
+                        }
+                    }
+                }
+                .item-title {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                .item-type {
+                    font-size: 13px;
+                    color: #A0A0A0;
+                }
+                .item-price {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #8B8B8B;
+                }
+                .item-installments {
+                    font-size: 13px;
+                    color: #979797;
+                }
+                .item-button {
+                    visibility: hidden;
+                    background-color: #FD5C2B;
+                    color: #fff;
+                    width: 90%;
+                    border-radius: 2px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 12px;
+                    margin: 15px auto 5px;
+                    display: block;
+                    height: 35px;
+                }
+                &:hover {
+                    border: 1px solid #CBCBCB;
+                    cursor: pointer;
+                    .item-button {
+                        visibility: visible;
+                    }
+                }
             }
         }
     }

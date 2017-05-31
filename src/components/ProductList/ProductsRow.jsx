@@ -18,7 +18,7 @@ class ProductsRow extends React.Component {
         }
         return (
             <div className="products-row">
-                <p>{this.props.title}</p>
+                <p className="row-title">{this.props.title}</p>
                 <ul className="list">
                     {items}
                 </ul>

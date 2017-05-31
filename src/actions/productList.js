@@ -1,3 +1,4 @@
+import Config from './../config'
 import axios from 'axios';
 
 export const RECEIVE_PRODUCTS = 'RECEIVE_PRODUCTS';
@@ -19,7 +20,7 @@ export function setLoader(status) {
 export function fetchProducts() {
     return (dispatch) => {
         dispatch(setLoader(true));
-        axios.get('http://www.raphaelfabeni.com.br/rv/data.json')
+        axios.get(`${Config.productsApiUrl}/bins/17p5d5`)
             .then((response) => {
                 dispatch(receiveProducts(response.data));
                 dispatch(setLoader(false));

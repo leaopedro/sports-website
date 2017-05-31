@@ -11,6 +11,7 @@ const Home = () => {
         <NavbarContainer />
         <Banner imageUrl="/img/banner.png" />
         <ProductListContainer />
+        <Banner imageUrl="/img/banner-bottom.jpg" />
     </div>
   );
 };

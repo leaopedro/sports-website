@@ -12,7 +12,16 @@ class ProductItem extends React.Component {
     render() {
         return (
             <div className="product-item">
-                <p>{this.props.product.title}</p>
+                <img className="item-image" src={this.props.product.image} />
+                <div className="personalize">
+                    <div className="personalize-icon"></div>
+                    <p className="personalize-title">Personalize</p>
+                </div>
+                <p className="item-title">{this.props.product.title}</p>
+                <p className="item-type">{(this.props.product['high-top'])? 'Cano Alto' : 'Cano Baixo'}</p>
+                <p className="item-price">{`R$ ${this.props.product.price}0`}</p>
+                <p className="item-installments">{`ou ${this.props.product.installments.number}X ${this.props.product.installments.value}0 sem juros`}</p>
+                <button className=" btn btn-default item-button" >Comprar</button>
             </div>
         );
     }

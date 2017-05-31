@@ -1,3 +1,4 @@
 export default {
-    //TODO passar endereço da api pra cá
+//    productsApiUrl: 'http://www.raphaelfabeni.com.br',
+    productsApiUrl: 'https://api.myjson.com',
 };
