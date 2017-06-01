@@ -1,5 +1,4 @@
 # [Website Nike](https://leaopedro.github.io/RV-test/release/)
-Teste Red Ventures
 
 ### Tecnologias utilizadas:
 - [ReactJS](https://facebook.github.io/react/)
