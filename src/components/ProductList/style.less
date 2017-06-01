@@ -36,6 +36,7 @@
                 }
                 .personalize {
                     width: 90%;
+                    position: relative;
                     border-bottom: 1px solid #CBCBCB;
                     margin-bottom: 5px;
                     .personalize-icon {
@@ -53,6 +54,14 @@
                         text-transform: uppercase;
                         font-weight: bold;
                         margin: 2px 0;
+                    }
+                    .picker-container{
+                        position: absolute;
+                        z-index: 5;
+                        left: 0px;
+                        input {
+                            display: none;
+                        }
                     }
                     &:hover {
                         border-bottom: 1px solid #888888;
