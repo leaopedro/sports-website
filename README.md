@@ -1,4 +1,4 @@
-# [Website Nike](https://leaopedro.github.io/RV-test/release/)
+# [Website Nike](https://leaopedro.github.io/sports-website/release/)
 
 ### Tecnologias utilizadas:
 - [ReactJS](https://facebook.github.io/react/)
